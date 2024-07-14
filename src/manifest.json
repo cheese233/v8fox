@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "background": {
+        "scripts": ["background.ts"]
+    },
+    "applications": {
+        "gecko": {
+            "id": "v8fox@cheese233.eu.org",
+            "strict_min_version": "50.0"
+        }
+    },
+
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>",
+        "nativeMessaging",
+        "tabs"
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "name": "v8fox",
+    "version": "1.0.0",
+    "author": "cheese233",
+    "description": "",
+    "type": "module",
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^26.0.1",
+        "@rollup/plugin-node-resolve": "^15.2.3",
+        "@rollup/plugin-typescript": "^11.1.6",
+        "rollup": "^4.18.1",
+        "rollup-plugin-chrome-extension": "^3.6.12",
+        "web-ext": "^8.2.0"
+    },
+    "scripts": {
+        "build": "rollup -c",
+        "build:server": "make --directory=server clean; make --directory=server",
+        "lint:server": "cd server; make clean; bear -- make",
+        "start": "rollup -c -w",
+        "serve:firefox": "web-ext run --start-url \"about:debugging#/runtime/this-firefox\"  --source-dir ./dist/"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@types/firefox-webext-browser": "^120.0.4",
+        "buffer": "^6.0.3"
+    }
+}

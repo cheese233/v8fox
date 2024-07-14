@@ -1,0 +1,7 @@
+{
+    "name": "v8fox_server",
+    "description": "v8 host for v8fox",
+    "path": "./server.exe",
+    "type": "stdio",
+    "allowed_extensions": ["v8fox@cheese233.eu.org"]
+}

@@ -1,3 +1,6 @@
 [submodule "server/v8"]
 	path = server/v8
 	url = https://github.com/v8/v8.git
+[submodule "server/libuv"]
+	path = server/libuv
+	url = https://github.com/libuv/libuv.git
